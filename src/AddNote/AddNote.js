@@ -61,7 +61,7 @@ export default class AddNote extends Component {
       })
     };
 
-    fetch('http://localhost:9090/notes', options)
+    fetch('http://localhost:8080/api/notes', options)
       .then(res => {
         if (!res.ok) {
           throw new Error('Something went wrong');

@@ -18,8 +18,8 @@ class App extends Component {
     folders: [],
     err: null
   };
-  FolderUrl = 'http://localhost:9090/folders';
-  NoteUrl = 'http://localhost:9090/notes';
+  FolderUrl = 'http://localhost:8080/api/folders';
+  NoteUrl = 'http://localhost:8080/api/notes';
 
   componentDidMount() {
     fetch(this.FolderUrl)
