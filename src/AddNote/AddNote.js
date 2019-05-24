@@ -61,7 +61,7 @@ export default class AddNote extends Component {
       })
     };
 
-    fetch('http://localhost:8080/api/notes', options)
+    fetch('https://shrouded-peak-84155.herokuapp.com/api/notes', options)
       .then(res => {
         if (!res.ok) {
           throw new Error('Something went wrong');

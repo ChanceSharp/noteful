@@ -18,8 +18,8 @@ class App extends Component {
     folders: [],
     err: null
   };
-  FolderUrl = 'http://localhost:8080/api/folders';
-  NoteUrl = 'http://localhost:8080/api/notes';
+  FolderUrl = 'https://shrouded-peak-84155.herokuapp.com/api/folders';
+  NoteUrl = 'https://shrouded-peak-84155.herokuapp.com/api/notes';
 
   componentDidMount() {
     fetch(this.FolderUrl)

@@ -46,7 +46,7 @@ export default class AddFolder extends Component {
     };
     console.log(options);
 
-    fetch('http://localhost:8080/api/folders', options)
+    fetch('https://shrouded-peak-84155.herokuapp.com/api/folders', options)
       .then(res => {
         if (!res.ok) {
           throw new Error('Something went wrong');
